@@ -66,9 +66,9 @@ x_nuevo = st.sidebar.number_input(f"Valor de [{col_x}] a predecir:", value=0.0, 
 
 st.sidebar.header("Configuración de Modelos ⚙️")
 # Arbol: del 1 al 10, empezando en 3
-profundidad_arbol = st.sidebar.slider("Profundidad del Árbol:", min_value=1, max_value=20, value=3)
+profundidad_arbol = st.sidebar.slider("Profundidad del Árbol:", min_value=1, max_value=15, value=3)
 # Neurona: del 1 al 100, empezando en 10
-cantidad_neuronas = st.sidebar.slider("Neuronas en capa oculta:", min_value=1, max_value=250, value=10)
+cantidad_neuronas = st.sidebar.slider("Neuronas en capa oculta:", min_value=1, max_value=150, value=10)
 
 # Preparamos los datos
 # scikit-learn requiere que X sea 2D (DataFrame) y y sea 1D (Serie)
